@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewsPage">
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.CardView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/NewsImage"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/blackOpacity"/>
+            <android.support.v7.widget.AppCompatButton
+                android:layout_marginTop="@dimen/DefaultLayout"
+                android:layout_marginLeft="@dimen/DefaultLayout"
+                android:id="@+id/backBtn"
+                android:background="@drawable/back"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:layout_gravity="bottom"
+                android:id="@+id/newsTitle"
+                android:textColor="@color/white"
+                android:layout_margin="@dimen/DefaultLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </android.support.v7.widget.CardView>
+        <LinearLayout
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/DefaultLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:textColor="@color/blackOpacity"
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <android.support.v7.widget.AppCompatButton
+
+                android:layout_marginTop="@dimen/DefaultLayout"
+                android:text="Go To Website"
+                android:background="@color/orangeAppColor"
+                android:id="@+id/goToUrl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

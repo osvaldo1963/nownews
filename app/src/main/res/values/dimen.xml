@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="MainLayoutTop">55dp</dimen>
+    <dimen name="DefaultLayout">20dp</dimen>
+    <dimen name="profileSize">80dp</dimen>
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".CreateAccount">
+
+    <include layout="@layout/toolbar"  />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/MainLayoutTop"
+        android:fillViewport="true">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DefaultLayout"
+            android:layout_marginLeft="@dimen/DefaultLayout"
+            android:layout_marginRight="@dimen/DefaultLayout">
+
+            <EditText
+                android:id="@+id/usernameInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/usenameText"
+                android:textColor="@color/white"
+                android:typeface="sans" />
+            <EditText
+                android:id="@+id/passwordInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/DefaultLayout"
+                android:hint="@string/passwordText"
+                android:inputType="textPassword"
+                android:textColor="@color/white"
+                android:typeface="sans" />
+            <EditText
+                android:id="@+id/conpasswordInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/DefaultLayout"
+                android:hint="@string/conpassworedText"
+                android:inputType="textPassword"
+                android:textColor="@color/white"
+                android:typeface="sans" />
+            <Button
+                android:id="@+id/signinBtn"
+                android:layout_marginTop="@dimen/DefaultLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/orangeAppColor"
+                android:textColor="@color/white"
+                android:onClick="signUpAction"
+                android:text="@string/signinText"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

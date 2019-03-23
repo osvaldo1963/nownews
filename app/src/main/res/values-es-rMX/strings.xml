@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Assignment2</string>
+    <string name="usenameText">Correo-E</string>
+    <string name="passwordText">Contrasena</string>
+    <string name="conpassworedText">Confirmar Contrasena</string>
+    <string name="signinText">Entrar</string>
+    <string name="createaccountText">Crear Cuenta</string>
+    <string name="needhelpText">Ayuda?</string>
+</resources>
